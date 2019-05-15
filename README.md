@@ -3,6 +3,8 @@ This script was intended to remind my wife to drink more water when she is sick.
 
 # Requirements
 Need to install fbchat for this functionality.
+Need to schedule this script to run automatically. I've done this using Crontab on my Raspberry Pi with the following line:
+#0, 30, 10-22 * * * sudo -u username python3 /full-path/drink-water.py
 
 # Usage
 ```python
