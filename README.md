@@ -5,10 +5,10 @@ This script was intended to remind my wife to drink more water when she is sick.
 Need to install fbchat for this functionality.
 
 # Usage
+```python
 from fbchat import Client
 from fbchat.models import *
 
-```python
 # get credentials
 with open("credentials.txt", "r") as f:
 	lines = f.readlines()
