@@ -4,11 +4,12 @@ This script was intended to remind my wife to drink more water when she is sick.
 # Requirements
 Need to install fbchat for this functionality.
 
-# usage
+# Usage
 from fbchat import Client
 from fbchat.models import *
 
-#get credentials
+```python
+# get credentials
 with open("credentials.txt", "r") as f:
 	lines = f.readlines()
 	username = lines[0].rstrip()
@@ -16,12 +17,13 @@ with open("credentials.txt", "r") as f:
 	my_uid = lines[2].rstrip()
 f.close()
 
-#open client
+# open client
 client = Client(username, password)
 
-#send message
+# send message
 client.send(Message(text='Time to drink water!'), thread_id=my_uid, thread_type=ThreadType.USER)
 client.logout()
+```
 
 # Contributing
 Pull requests are welcome. Feel free to contact me at brodydingel795@gmail.com for suggestions or comments.
