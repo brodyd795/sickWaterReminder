@@ -1,5 +1,5 @@
 # Drink Water Reminder
-This script was intended to remind my wife to drink more water when she is sick. Rather than reminding her myself, this script does it automatically.
+I wrote this simple app to help remind a loved one to drink more water when they are sick. Rather than trying to remind them myself, the script does it automatically.
 
 # Requirements
 Need to install fbchat for this functionality. Also need to schedule this script to run automatically. I've done this using Crontab on my Raspberry Pi with the following line:
